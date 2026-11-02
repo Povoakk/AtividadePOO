@@ -19,6 +19,8 @@ Seguem as prints do código, separadas pro classe:
 
 ![](Imagens/ClasseMesaRepository2.png)
 
+![](Imagens/ClasseMesaRepository3.png)
+
 
 
 &#x09;- Database:
