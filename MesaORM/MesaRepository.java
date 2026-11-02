@@ -39,6 +39,35 @@ public class MesaRepository{
         }
         return mesa;
     }
+    public Mesa update(Mesa mesa) {
+        int nrows = 0;
+        try {
+        nrows = dao.update(mesa);
+
+        if (nrows == 0)
+            throw new SQLException("Error: object not updated");
+
+        this.loadedMesa = mesa;
+
+        } catch (SQLException e) {
+        System.out.println(e);
+        }
+        return mesa;
+    }
+    public void delete(Mesa mesa) {
+        int nrows = 0;
+        try {
+        nrows = dao.delete(mesa);
+
+        if (nrows == 0)
+            throw new SQLException("Error: object not deleted");
+
+        this.loadedMesas.remove(mesa);
+
+        } catch (SQLException e) {
+        System.out.println(e);
+        }
+    }
     public Mesa loadFromId(int id) {
         try {
             this.loadedMesa = dao.queryForId(id);

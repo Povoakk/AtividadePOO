@@ -11,7 +11,7 @@ public class Mesa{
     private String status;
     
     public int getId(){
-    return this.id;
+        return this.id;
     }  
     public String getStatus(){
         return this.status;
@@ -21,5 +21,10 @@ public class Mesa{
     }
     public void setStatus(String status){
         this.status = status;
+    }
+    public Mesa(String status){
+        this.status = status;
+    }
+    public Mesa(){
     }
 }
