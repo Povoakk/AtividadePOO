@@ -1,0 +1,13 @@
+#BlueJ class context
+#Mon Nov 02 15:30:08 BRT 2026
+comment0.target=MesaRepository
+comment1.params=database
+comment1.target=MesaRepository(Database)
+comment2.params=database
+comment2.target=void setDatabase(Database)
+comment3.params=mesa
+comment3.target=Mesa create(Mesa)
+comment4.params=id
+comment4.target=Mesa loadFromId(int)
+comment5.target=java.util.List loadAll()
+numComments=6

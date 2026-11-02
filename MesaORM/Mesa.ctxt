@@ -1,0 +1,10 @@
+#BlueJ class context
+#Sun Nov 01 16:20:42 BRT 2026
+comment0.target=Mesa
+comment1.target=int getId()
+comment2.target=java.lang.String getStatus()
+comment3.params=id
+comment3.target=void setId(int)
+comment4.params=status
+comment4.target=void setStatus(java.lang.String)
+numComments=5
