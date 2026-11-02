@@ -83,3 +83,12 @@ Com as imagens, percebe-se que o código funcionou como deveria. Por meio dele, 
 modificá-los e depois atualizá-los dentro do repositório, verificar quantos estão presentes, encontrar um objeto por Id, e
 deletá-los caso seja necessário.
 
+Podemos ver, também, que o banco de dados salva os objetos mesmo depois de reiniciar o BlueJ. Ao longo dos testes, criei dois 
+bancos de dados, mesa.md e mesas.md. Ao iniciar esses dois bancos de dados com um repositório para cada um, vemos que os 
+objetos ainda estão salvos:
+
+![](Imagens/Reiniciar.png)
+
+![](Imagens/mesa.png)
+
+![](Imagens/mesas.png)
