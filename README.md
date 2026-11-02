@@ -15,20 +15,20 @@ de permitir criar, deletar, encontrar e editar mesas.
 Seguem as prints do código, separadas pro classe:
 
 &#x09;- MesaRepository:
-!\[](Imagens/ClasseMesaRepository1.png)
+![](Imagens/ClasseMesaRepository1.png)
 
-!\[](Imagens/ClasseMesaRepository2.png)
+![](Imagens/ClasseMesaRepository2.png)
 
 
 
 &#x09;- Database:
-!\[](Imagens/ClasseDatabase.png)
+![](Imagens/ClasseDatabase.png)
 
 
 
 &#x09;- Mesa:
 
-!\[](Imagens/ClasseMesa.png)
+![](Imagens/ClasseMesa.png)
 
 
 
@@ -38,42 +38,42 @@ Agora, as próximas imagens vão demonstrar esse código posto em prática:
 
 &#x09;- Criando objetos Database e MesasRepository, com um database criado corretamente:
 
-!\[](Imagens/AbrindoDbRp.png)
+![](Imagens/AbrindoDbRp.png)
 
 
 
 &#x09;- Criando objetos e os adicionando ao repositório:
-!\[](Imagens/CriarObjetoMesa.png)
+![](Imagens/CriarObjetoMesa.png)
 
 &#x09;
 
 &#x09;- Checando quantos objetos estão guardados dentro do repositório:
 
-!\[](Imagens/ListaDeObj.png)
+![](Imagens/ListaDeObj.png)
 
 
 
 &#x09;- Encontrando objetos por Id:
 
-!\[](Imagens/EncontrandoId.png)
+![](Imagens/EncontrandoId.png)
 
 &#x09;
 
 &#x09;- Alterando objetos e salvando-os no repositório:
 
-!\[](Imagens/AlterarStatus.png)
+![](Imagens/AlterarStatus.png)
 
-!\[](Imagens/DarUpdate.png)
+![](Imagens/DarUpdate.png)
 
-!\[](Imagens/MostrarUpdate.png)
+![](Imagens/MostrarUpdate.png)
 
 &#x09;
 
 &#x09;- Deletando objetos dentro do repositório:
 
-!\[](Imagens/FuncaoDelet.png)
+![](Imagens/FuncaoDelet.png)
 
-!\[](Imagens/ObjetoDeletado.png)
+![](Imagens/ObjetoDeletado.png)
 
 
 
