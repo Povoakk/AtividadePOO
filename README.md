@@ -1,8 +1,8 @@
-\# Atividades de Programação Orientada a Objetos
+ Atividades de Programação Orientada a Objetos
 
 
 
-Este repositório reúne atividades, exercícios e projetos desenvolvidos durante a disciplina de \*\*Programação Orientada a Objetos (POO)\*\*, da Universidade Federal de Goiás (UFG).
+Este repositório reúne atividades, exercícios e projetos desenvolvidos durante a disciplina de Programação Orientada a Objetos (POO), da Universidade Federal de Goiás (UFG).
 
 
 
@@ -14,11 +14,9 @@ Os projetos estão organizados em diretórios independentes, cada um contendo se
 
 
 
-\---
 
 
+Linguagem principal: Java  
 
-\*\*Linguagem principal:\*\* Java  
-
-\*\*Instituição:\*\* Universidade Federal de Goiás (UFG)
+Instituição:Universidade Federal de Goiás (UFG)
 
