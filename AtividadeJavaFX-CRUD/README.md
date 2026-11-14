@@ -48,8 +48,6 @@ O banco de dados SQLite é criado automaticamente quando a aplicação estabelec
 
 As imagens da aplicação estão disponíveis no diretório `Imagens`.
 
-## Capturas de tela
-
 ### Tela inicial
 ![Tela inicial](Imagens/ProjetoAberto.png)
 
