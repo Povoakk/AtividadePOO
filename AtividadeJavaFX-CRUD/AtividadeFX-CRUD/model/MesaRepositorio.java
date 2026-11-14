@@ -1,0 +1,92 @@
+package model;
+
+import com.j256.ormlite.dao.DaoManager;
+import com.j256.ormlite.dao.Dao;
+import java.sql.SQLException;
+import com.j256.ormlite.table.TableUtils;
+import java.util.List;
+import java.util.ArrayList;
+
+public class MesaRepositorio{
+    private static Database database;
+    private static Dao<Mesa, Integer> dao;
+    private List<Mesa> loadedMesas;
+    private Mesa loadedMesa;
+    
+    public MesaRepositorio(Database database){
+        MesaRepositorio.setDatabase(database);
+        loadedMesas = new ArrayList<Mesa>();
+    }
+     public static void setDatabase(Database database) {
+        MesaRepositorio.database = database;
+        try {
+            dao = DaoManager.createDao(database.getConnection(), Mesa.class);
+            TableUtils.createTableIfNotExists(database.getConnection(), Mesa.class);
+        }
+        catch(SQLException e) {
+            System.out.println(e);
+        }            
+    }
+    public Mesa create(Mesa mesa) {
+        int nrows = 0;
+        try {
+            nrows = dao.create(mesa);
+            if ( nrows == 0 )
+                throw new SQLException("Error: object not saved");
+            this.loadedMesa = mesa;
+            loadedMesas.add(mesa);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+        return mesa;
+    }    
+    public void update(Mesa mesa) {
+        try {
+            int nrows = dao.update(mesa);
+            if (nrows == 0)
+            throw new SQLException("Error: object not updated");
+
+            this.loadedMesa = mesa;
+
+        } 
+        catch (SQLException e) {
+            System.out.println(e);
+            }
+    }
+    public void delete(Mesa mesa) {
+        try {
+            int nrows = dao.delete(mesa);
+            if (nrows == 0)
+            throw new SQLException("Error: object not deleted");
+
+            this.loadedMesas.remove(mesa);
+
+            if (this.loadedMesa == mesa)
+            this.loadedMesa = null;
+
+        } 
+        catch (SQLException e) {
+        System.out.println(e);
+        }
+    }
+    public Mesa loadFromId(int id) {
+        try {
+            this.loadedMesa = dao.queryForId(id);
+            if (this.loadedMesa != null)
+                this.loadedMesas.add(this.loadedMesa);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+        return this.loadedMesa;
+        }    
+    public List<Mesa> loadAll() {
+        try {
+            this.loadedMesas =  dao.queryForAll();
+            if (this.loadedMesas.size() != 0)
+                this.loadedMesa = this.loadedMesas.get(0);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+        return this.loadedMesas;
+    }
+}
