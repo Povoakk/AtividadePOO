@@ -1,0 +1,11 @@
+# Arquivos compilados Java
+*.class
+
+# Arquivos auxiliares do BlueJ
+*.ctxt
+
+# Bancos de dados locais
+*.db
+
+# Arquivos temporários
+*.tmp
