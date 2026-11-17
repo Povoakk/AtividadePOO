@@ -86,12 +86,12 @@ A implementação foi desenvolvida e testada pelo estudante, com acompanhamento 
 ## Capturas de tela
 
 ### Cadastro e listagem
-![Cadastro e listagem](imagens/CadastroListagem.png)
+![Cadastro e listagem](Imagens/CadastroListagem.png)
 
 ### Busca de mesas
-![Busca](imagens/BuscaMesas.png)
+![Busca](Imagens/BuscaMesas.png)
 
 ### Remoção de mesas
-![Exceções](imagens/RemocaoMesas.png)
+![Exceções](Imagens/RemocaoMesas.png)
 
 As excessões fazem com que não se possa cadastrar, buscar ou remover mesas que não condizem com o Id fornecido.
